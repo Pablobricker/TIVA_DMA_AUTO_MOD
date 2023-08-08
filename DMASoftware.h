@@ -14,8 +14,6 @@ uint32_t ucControlTable[256] __attribute__ ((aligned(1024)));
 // ************DMA_Init*****************
 // Inicializa el controlador uDMA para realizar transferenicas de memoria Flash a memoria RAM
 // Necesita ser llamada antes de realizar la solicitud por software
-// Inputs:  ninguna
-// Outputs: ninguna
 void DMA_Init(void){  int i;
   volatile uint32_t delay; 
   for(i=0; i<256; i++){
