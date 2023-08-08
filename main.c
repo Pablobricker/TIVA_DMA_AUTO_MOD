@@ -1,25 +1,8 @@
-// DMAtestmain.c
-// Runs on LM4F120/TM4C123
-// Used to test the software triggerred DMA block transfer.
-// Jonathan Valvano
-// September 11, 2013
+// main.c
+// Runs on TM4C1294
+// realiza transferencias solicitadas por software de una region de memoria a otra
+// El origen de la transferencia puede ser flash o ram, y el destino es un arreglo en ram
 
-/* This example accompanies the book
-   "Embedded Systems: Real Time Operating Systems for ARM Cortex M Microcontrollers",
-   ISBN: 978-1466468863, Jonathan Valvano, copyright (c) 2014
-   Section 6.4.5, Program 6.1
-
- Copyright 2014 by Jonathan W. Valvano, valvano@mail.utexas.edu
-    You may use, edit, run or distribute this file
-    as long as the above copyright notice remains
- THIS SOFTWARE IS PROVIDED "AS IS".  NO WARRANTIES, WHETHER EXPRESS, IMPLIED
- OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
- MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO THIS SOFTWARE.
- VALVANO SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR SPECIAL, INCIDENTAL,
- OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
- For more information about my classes, my research, and my books, see
- http://users.ece.utexas.edu/~valvano/
- */
 #include <stdint.h>
 #include "DMASoftware.h"
 
